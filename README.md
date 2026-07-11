@@ -74,8 +74,8 @@ This ETL pipeline transforms raw business data into a clean, structured, and rel
               ▼
  Business Intelligence / SQL / AI / RAG
 ```
-'''
-⚙️ Technologies Used
+
+# ⚙️ Technologies Used
 | Technology | Purpose                        |
 | ---------- | ------------------------------ |
 | Python     | ETL Pipeline Development       |
