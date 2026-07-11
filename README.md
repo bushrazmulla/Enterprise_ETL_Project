@@ -47,50 +47,34 @@ This ETL pipeline transforms raw business data into a clean, structured, and rel
 
 # 🏗️ ETL Architecture
 
+```text
+             Raw Data Sources
+      ├── sales.csv
+      ├── customers.csv
+      └── products.csv
+              │
+              ▼
+          EXTRACT
+              │
+              ▼
+         TRANSFORM
+      • Remove Duplicates
+      • Handle Missing Values
+      • Standardize Dates
+      • Merge Datasets
+      • Calculate Revenue
+      • Validate Data
+              │
+              ▼
+            LOAD
+              │
+              ▼
+       MySQL Database
+              │
+              ▼
+ Business Intelligence / SQL / AI / RAG
 ```
-
-Raw Data Sources
-
-├── sales.csv
-├── customers.csv
-└── products.csv
-
-↓
-
-EXTRACT
-
-↓
-
-TRANSFORM
-
-• Remove Duplicate Records
-
-• Handle Missing Values
-
-• Standardize Date Formats
-
-• Merge Related Datasets
-
-• Calculate Revenue
-
-• Validate Data Quality
-
-↓
-
-LOAD
-
-↓
-
-MySQL Database
-
-↓
-
-Analytics
-
-↓
-
-Power BI | Dashboards | SQL | AI | RAG
-
+'''
 ⚙️ Technologies Used
 | Technology | Purpose                        |
 | ---------- | ------------------------------ |
@@ -102,42 +86,28 @@ Power BI | Dashboards | SQL | AI | RAG
 | SQL        | Data Retrieval & Analysis      |
 
 
-📂 Project Structure
+## 📂 Project Structure
+
+```text
 Enterprise_ETL_Project/
-
 │
-
 ├── data/
-
-│ ├── raw/
-
-│ │ ├── sales.csv
-
-│ │ ├── customers.csv
-
-│ │ └── products.csv
-
+│   └── raw/
+│       ├── sales.csv
+│       ├── customers.csv
+│       └── products.csv
 │
-
 ├── src/
-
-│ ├── extract.py
-
-│ ├── transform.py
-
-│ ├── load.py
-
-│ ├── config.py
-
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   └── config.py
 │
-
 ├── main.py
-
 ├── requirements.txt
-
 ├── README.md
-
 └── .gitignore
+```
 
 🔄 ETL Workflow
 1️⃣ Extract
@@ -189,7 +159,9 @@ This creates a unified analytical dataset.
 
 A new business metric is derived.
 
+```text
 Revenue = Quantity × Price
+```
 ✔ Data Validation
 
 Validation checks include:
@@ -239,6 +211,7 @@ Database Loading
 Enterprise Data Pipelines
 
 🤖 ETL for Generative AI
+```text
 
 Large Language Models require clean and structured data.
 
@@ -269,3 +242,4 @@ Retriever
 ↓
 
 Large Language Model (LLM)
+```
