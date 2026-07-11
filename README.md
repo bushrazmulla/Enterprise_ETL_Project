@@ -109,22 +109,25 @@ Enterprise_ETL_Project/
 └── .gitignore
 ```
 
-🔄 ETL Workflow
+## 1️⃣ Extract
 
-1️⃣ Extract
 Data is extracted from three independent business sources:
-```text
 
-Sales Data
-Customer Data
-Product Data
+- Sales Data
+- Customer Data
+- Product Data
 
 The extraction layer converts raw CSV files into Pandas DataFrames.
-```
 
-2️⃣ Transform
-Several business transformations are applied.
-✔ Duplicate Removal
+## 2️⃣ Transform
+
+Several business transformations are applied during the transformation phase.
+
+### ✔ Duplicate Removal
+
+Removes duplicate transactional records to prevent inaccurate reporting.
+
+### ✔ Missing Value Handling
 Removes duplicate transactional records to prevent inaccurate reporting.
 
 ✔ Missing Value Handling
@@ -148,8 +151,10 @@ Example:
 
 Customer, Sales, and Product datasets are merged using:
 
-CustomerID
-ProductID
+- CustomerID
+- ProductID
+
+This creates a unified analytical dataset.
 
 This creates a unified analytical dataset.
 
