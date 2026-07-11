@@ -110,22 +110,21 @@ Enterprise_ETL_Project/
 ```
 
 🔄 ETL Workflow
-1️⃣ Extract
 
+1️⃣ Extract
 Data is extracted from three independent business sources:
+```text
 
 Sales Data
 Customer Data
 Product Data
 
 The extraction layer converts raw CSV files into Pandas DataFrames.
+```
 
 2️⃣ Transform
-
 Several business transformations are applied.
-
 ✔ Duplicate Removal
-
 Removes duplicate transactional records to prevent inaccurate reporting.
 
 ✔ Missing Value Handling
@@ -136,16 +135,15 @@ Removes duplicate transactional records to prevent inaccurate reporting.
 | Product Price | Replace with 0         |
 
 ✔ Date Standardization
-
+```text
 Converts multiple date formats into a consistent format.
-
 Example:
-
 07/03/2026
 
 ↓
 
 2026-07-03
+```
 ✔ Dataset Integration
 
 Customer, Sales, and Product datasets are merged using:
