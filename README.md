@@ -137,7 +137,7 @@ Removes duplicate transactional records to prevent inaccurate reporting.
 | Customer Name | Replace with "Unknown" |
 | Product Price | Replace with 0         |
 
-###✔ Date Standardization
+### ✔ Date Standardization
 ```text
 Converts multiple date formats into a consistent format.
 Example:
@@ -147,7 +147,7 @@ Example:
 
 2026-07-03
 ```
-###✔ Dataset Integration
+### ✔ Dataset Integration
 
 Customer, Sales, and Product datasets are merged using:
 
@@ -158,14 +158,14 @@ This creates a unified analytical dataset.
 
 This creates a unified analytical dataset.
 
-###✔ Feature Engineering
+### ✔ Feature Engineering
 
 A new business metric is derived.
 
 ```text
 Revenue = Quantity × Price
 ```
-###✔ Data Validation
+### ✔ Data Validation
 
 Validation checks include:
 
