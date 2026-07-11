@@ -246,3 +246,20 @@ Retriever
 
 Large Language Model (LLM)
 ```
+# ⭐ How to Run
+
+Recruiters actually like this.
+
+# Clone repository
+git clone https://github.com/USERNAME/enterprise-sales-etl-pipeline.git
+
+# Move inside project
+cd enterprise-sales-etl-pipeline
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure MySQL credentials
+
+# Run ETL pipeline
+python main.py
