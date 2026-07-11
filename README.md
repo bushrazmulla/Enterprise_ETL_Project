@@ -137,7 +137,7 @@ Removes duplicate transactional records to prevent inaccurate reporting.
 | Customer Name | Replace with "Unknown" |
 | Product Price | Replace with 0         |
 
-✔ Date Standardization
+###✔ Date Standardization
 ```text
 Converts multiple date formats into a consistent format.
 Example:
@@ -147,7 +147,7 @@ Example:
 
 2026-07-03
 ```
-✔ Dataset Integration
+###✔ Dataset Integration
 
 Customer, Sales, and Product datasets are merged using:
 
@@ -158,14 +158,14 @@ This creates a unified analytical dataset.
 
 This creates a unified analytical dataset.
 
-✔ Feature Engineering
+###✔ Feature Engineering
 
 A new business metric is derived.
 
 ```text
 Revenue = Quantity × Price
 ```
-✔ Data Validation
+###✔ Data Validation
 
 Validation checks include:
 
@@ -173,7 +173,7 @@ Missing Product Prices
 Missing IDs
 Invalid Revenue
 Data Integrity
-3️⃣ Load
+##3️⃣ Load
 
 The transformed dataset is loaded into MySQL using SQLAlchemy.
 
@@ -183,14 +183,14 @@ sales_report
 
 can be queried using SQL and consumed by downstream applications.
 
-📊 Sample Output
+# 📊 Sample Output
 | OrderID | CustomerName | Product  | Revenue |
 | ------- | ------------ | -------- | ------: |
 | 1001    | Bushra       | Laptop   |  120000 |
 | 1002    | Ali          | Mouse    |     700 |
 | 1003    | Bushra       | Keyboard |    4500 |
 
-💡 Key Features
+# 💡 Key Features
 ✅ Multi-source Data Extraction
 ✅ Modular ETL Architecture
 ✅ Data Cleaning
@@ -201,7 +201,7 @@ can be queried using SQL and consumed by downstream applications.
 ✅ MySQL Integration
 ✅ SQL Ready
 
-🎓 Key Learnings
+# 🎓 Key Learnings
 This project strengthened my understanding of:
 ETL Architecture
 Data Engineering Concepts
@@ -213,7 +213,7 @@ Data Validation
 Database Loading
 Enterprise Data Pipelines
 
-🤖 ETL for Generative AI
+# 🤖 ETL for Generative AI
 ```text
 
 Large Language Models require clean and structured data.
